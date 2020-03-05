@@ -6,7 +6,7 @@
             clipped
     >
       <v-list dense>
-        <v-list-item link>
+        <v-list-item link to="/dash">
           <v-list-item-action>
             <v-icon>mdi-view-dashboard-outline</v-icon>
           </v-list-item-action>
@@ -14,7 +14,7 @@
             <v-list-item-title>DashBoard</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item link>
+        <v-list-item link to="/table">
           <v-list-item-action>
             <v-icon>mdi-view-grid</v-icon>
           </v-list-item-action>
@@ -60,7 +60,6 @@
       Principal
     },
     props: {
-      source: String,
       Title:String
     },
     data: () => ({
