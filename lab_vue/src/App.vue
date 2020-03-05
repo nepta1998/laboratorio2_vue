@@ -5,13 +5,13 @@
 </template>
 
 <script>
-import HelloWorld from './components/Principal';
+import Principal from './components/Principal';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    Principal,
   },
 
   data: () => ({

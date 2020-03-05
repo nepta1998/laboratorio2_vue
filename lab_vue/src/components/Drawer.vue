@@ -1,9 +1,9 @@
 <template>
     <v-card height="350px">
     <v-navigation-drawer
-    absolute
-    permanent
-    right
+      v-model="drawer"
+      app
+      clipped
     >
         <template v-slot:prepend>
             <v-list-item two-line>
@@ -12,8 +12,7 @@
             </v-list-item-avatar>
 
             <v-list-item-content>
-                <v-list-item-title>Jane Smith</v-list-item-title>
-                <v-list-item-subtitle>Logged In</v-list-item-subtitle>
+                <v-list-item-title>Smith Corporations</v-list-item-title>
             </v-list-item-content>
             </v-list-item>
         </template>
@@ -44,9 +43,9 @@
     data () {
       return {
         items: [
-          { title: 'Home', icon: 'mdi-home-city' },
-          { title: 'My Account', icon: 'mdi-account' },
-          { title: 'Users', icon: 'mdi-account-group-outline' },
+          { title: 'Dashboard', icon: 'mdi-home' },
+          { title: 'Tablas', icon: 'mdi-table' },
+          { title: 'Sobre nosotros', icon: 'mdi-account-group-outline' },
         ],
       }
     },
