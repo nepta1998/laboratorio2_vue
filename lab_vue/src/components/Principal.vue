@@ -51,6 +51,9 @@
 
 <script>
   export default {
-    name: 'Principal'
+    name: 'Principal',
+    created() {
+      this.$vuetify.theme.dark=true
+    }
   }
 </script>

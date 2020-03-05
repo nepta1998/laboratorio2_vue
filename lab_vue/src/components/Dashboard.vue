@@ -54,11 +54,7 @@
 </template>
 
 <script>
-  import Principal from "./Principal";
   export default {
-    components: {
-      Principal
-    },
     props: {
       Title:String
     },
