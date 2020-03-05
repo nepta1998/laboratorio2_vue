@@ -32,7 +32,7 @@
                       ? `linear-gradient(0deg, ${gradient})`
                       : gradient[0],
                     border: '2px solid',
-                    borderColor: active ? '#222' : 'white'
+                    borderColor: active ? 'white' : '#222222'
                   }"
                                         width="30"
                                         height="30"

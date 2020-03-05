@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Principal from '../components/Principal.vue'
+import Tablas from '../components/Tablas.vue'
+import Musica from '../components/Musica.vue'
 
 Vue.use(VueRouter);
 
@@ -13,10 +16,18 @@ const routes = [
   {
     path: '/dash',
     name: 'Dash',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-  }
+    component: Principal
+  },
+  {
+    path: '/table',
+    name: 'Tablas',
+    component: Tablas
+  },
+  {
+    path: '/musica',
+    name: 'Musica',
+    component: Musica
+  },
 ];
 
 const router = new VueRouter({

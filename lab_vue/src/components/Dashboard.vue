@@ -1,30 +1,6 @@
 <template>
   <v-app id="inspire">
     <Drawer/>
-    <!-- <v-navigation-drawer
-            v-model="drawer"
-            app
-            clipped
-    >
-      <v-list dense>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-view-dashboard-outline</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>DashBoard</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-view-grid</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Tablas</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer> -->
 
     <v-app-bar
             app
@@ -63,7 +39,6 @@
       Drawer
     },
     props: {
-      source: String,
       Title:String
     },
     data: () => ({
