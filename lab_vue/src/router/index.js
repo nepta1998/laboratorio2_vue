@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Principal from '../components/Principal.vue'
 import Tablas from '../components/Tablas.vue'
 import Musica from '../components/Musica.vue'
+import Nosotros from '../components/Nosotros.vue'
 
 Vue.use(VueRouter);
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/musica',
     name: 'Musica',
     component: Musica
+  },
+  {
+    path: '/nosotros',
+    name: 'Nosotros',
+    component: Nosotros
   },
 ];
 
