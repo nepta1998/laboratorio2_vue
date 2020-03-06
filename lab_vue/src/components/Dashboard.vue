@@ -4,7 +4,7 @@
 
     <v-app-bar app clipped-left>
       <v-app-bar-nav-icon @click.stop />
-      <v-toolbar-title>{{Title}}</v-toolbar-title>
+      <v-toolbar-title>{{title}}</v-toolbar-title>
     </v-app-bar>
 
     <v-content>
@@ -30,7 +30,7 @@ export default {
     Drawer
   },
   props: {
-    Title: String
+    title: String
   },
   data: () => ({
     drawer: null

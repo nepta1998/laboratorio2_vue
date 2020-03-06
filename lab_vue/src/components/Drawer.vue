@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer v-model="drawer" app clipped>
+  <v-navigation-drawer  app clipped>
     <template v-slot:prepend>
       <v-list-item two-line>
         <v-list-item-avatar>
