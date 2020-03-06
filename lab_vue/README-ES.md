@@ -11,12 +11,12 @@
 Aplicación Vue.js con solo front-end, experimentando los componentes de Material Design de Vuetify.
 Se implementaron elementos como el menú multinivel, el tablero y la tabla.
 
-## Built With
+## Construido con
 
 * [Vue.js](https://vuejs.org/) - JavaScript Framework.
 * [Vuetify](https://vuetifyjs.com/en/) - Vue Material Design Component Framework.
 
-## Authors
+## Autores
 
 * **Neptalí Piña.** [@nepta1998.](https://github.com/nepta1998/)
 
