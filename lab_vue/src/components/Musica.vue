@@ -19,7 +19,6 @@
               <div class="d-flex flex-no-wrap justify-space-between">
                 <div>
                   <v-card-title class="headline" v-text="item.title"></v-card-title>
-
                   <v-card-subtitle v-text="item.artist"></v-card-subtitle>
                 </div>
 

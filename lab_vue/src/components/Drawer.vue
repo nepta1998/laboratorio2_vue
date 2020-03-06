@@ -15,15 +15,23 @@
     <v-divider></v-divider>
 
     <v-list dense>
-      <v-list-item v-for="item in items" :key="item.title" :to = "item.link">
-        <v-list-item-icon>
-          <v-icon>{{ item.icon }}</v-icon>
-        </v-list-item-icon>
+      <v-list-group
+              value="true"
+              prepend-icon="mdi-briefcase"
+      >
+        <v-list-item-title slot="activator">
+          <v-list-item-title>Proyecto</v-list-item-title>
+        </v-list-item-title>
+        <v-list-item v-for="item in items" :key="item.title" :to = "item.link">
+          <v-list-item-icon>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-item-icon>
 
-        <v-list-item-content>
-          <v-list-item-title>{{ item.title }}</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
+          <v-list-item-content>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list-group>
     </v-list>
   </v-navigation-drawer>
 </template>

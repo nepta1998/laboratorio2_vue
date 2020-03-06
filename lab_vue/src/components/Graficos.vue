@@ -14,8 +14,7 @@
 
         <v-row>
             <v-col
-                    cols="12"
-                    md="6"
+                    cols="6"
             >
                 <v-row class="fill-height" align="center">
                     <v-item-group v-model="gradient" mandatory>
@@ -44,10 +43,8 @@
                     </v-item-group>
                 </v-row>
             </v-col>
-
             <v-col
-                    cols="12"
-                    md="6"
+                    cols="6"
             >
                 <v-slider
                         v-model="width"
@@ -58,16 +55,15 @@
                         thumb-label
                 ></v-slider>
             </v-col>
-
             <v-col cols="6">
                 <v-row class="fill-height" align="center">
                     <v-switch v-model="fill" label="Filled"></v-switch>
                 </v-row>
             </v-col>
 
+
             <v-col
-                    cols="12"
-                    md="6"
+                    cols="6"
             >
                 <v-slider
                         v-model="radius"
@@ -79,8 +75,7 @@
             </v-col>
 
             <v-col
-                    cols="12"
-                    md="6"
+                    cols="6"
                     offset-md="6"
             >
                 <v-slider
@@ -103,6 +98,8 @@
         ['purple', 'violet'],
         ['#00c6ff', '#F0F', '#FF0'],
         ['#f72047', '#ffd200', '#1feaea'],
+        ['#aa4cf7', '#ff7d04', '#21ea35'],
+        ['red', 'blue', 'yellow'],
     ];
     export default {
         name: "Graficos",
@@ -112,7 +109,7 @@
             gradients,
             padding: 8,
             radius: 10,
-            value: [0, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0],
+            value: [10, 5, 10, 5, 10, 5, 10, 5, 10, 5, 10, 5,10,5,10],
             width: 2,
         }),
     }
