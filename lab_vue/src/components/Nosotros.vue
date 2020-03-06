@@ -10,13 +10,11 @@
         <v-row dense align="center" justify="center">
           <v-col v-for="(item, i) in items" :key="i">
               <v-card
-                      class="mx-auto"
-                      max-width="300"
                       :color="item.color"
               >
                 <div class="d-flex flex-no-wrap justify-space-between">
                   <div>
-                    <v-card-title class="headline" v-text="item.nombre"></v-card-title>
+                    <v-card-title class="" v-text="item.nombre"></v-card-title>
 
                     <v-card-subtitle v-text="item.cedula"></v-card-subtitle>
                   </div>
@@ -47,17 +45,17 @@ export default {
       {
         color: '#41a20c',
         nombre: 'Dany Karam',
-        cedula: '',
+        cedula: '25147670',
       },
       {
         color: '#87602e',
         nombre: 'José Pacheco',
-        cedula: '',
+        cedula: '26169922',
       },
       {
         color: '#661687',
         nombre: 'Anyeli Villarreal',
-        cedula: '',
+        cedula: '26002905',
       },
     ]
   }),
