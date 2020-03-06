@@ -16,14 +16,6 @@ Things like multilevel menu, dashboard, and table were implemented.
 * [Vue.js](https://vuejs.org/) - JavaScript Framework.
 * [Vuetify](https://vuetifyjs.com/en/) - Vue Material Design Component Framework.
 
-## Design Patterns
-
-Three design patterns were implemented for learning purposes. 
-
-* Creational: [Singleton.](https://refactoring.guru/design-patterns/singleton)
-* Structural: [Bridge.](https://refactoring.guru/design-patterns/bridge)
-* Behavioral: [Iterator.](https://refactoring.guru/design-patterns/iterator)
-
 ## Authors
 
 * **Neptalí Piña.** [@nepta1998.](https://github.com/nepta1998/)
