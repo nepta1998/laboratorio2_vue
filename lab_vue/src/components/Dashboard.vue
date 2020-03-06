@@ -1,25 +1,16 @@
 <template>
   <v-app id="inspire">
-    <Drawer/>
+    <Drawer />
 
-    <v-app-bar
-            app
-            clipped-left
-    >
-      <v-app-bar-nav-icon @click.stop/>
+    <v-app-bar app clipped-left>
+      <v-app-bar-nav-icon @click.stop />
       <v-toolbar-title>{{Title}}</v-toolbar-title>
     </v-app-bar>
 
     <v-content>
-      <v-container
-              class="fill-height"
-              fluid
-      >
-        <v-row
-                align="center"
-                justify="center"
-        >
-        <slot></slot>
+      <v-container class="fill-height" fluid>
+        <v-row align="center" justify="center">
+          <slot></slot>
         </v-row>
       </v-container>
     </v-content>
@@ -31,21 +22,21 @@
 </template>
 
 <script>
-  import Principal from "./Principal";
-  import Drawer from "./Drawer";
-  export default {
-    components: {
-      Principal,
-      Drawer
-    },
-    props: {
-      Title:String
-    },
-    data: () => ({
-      drawer: null,
-    }),
-    created () {
-      this.$vuetify.theme.dark= true
-    },
+import Principal from "./Principal";
+import Drawer from "./Drawer";
+export default {
+  components: {
+    Principal,
+    Drawer
+  },
+  props: {
+    Title: String
+  },
+  data: () => ({
+    drawer: null
+  }),
+  created() {
+    this.$vuetify.theme.dark = true;
   }
+};
 </script>
