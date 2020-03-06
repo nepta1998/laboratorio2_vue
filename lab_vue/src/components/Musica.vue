@@ -1,9 +1,9 @@
 <template>
   <dashboard title="Música">
-    <v-container fluid>
-      <v-content>
+    <v-content>
+      <v-container class="fill-height" fluid>
         <v-row dense align="center" justify="center">
-          <v-col cols="5">
+          <v-col cols="12" sm="8" md="4">
             <v-card color="#1300FF" dark>
               <v-card-title class="headline">Unlimited music now</v-card-title>
 
@@ -14,8 +14,7 @@
               </v-card-actions>
             </v-card>
           </v-col>
-
-          <v-col v-for="(item, i) in items" :key="i" cols="5">
+          <v-col v-for="(item, i) in items" :key="i" cols="12" sm="8" md="4">
             <v-card :color="item.color" dark>
               <div class="d-flex flex-no-wrap justify-space-between">
                 <div>
@@ -31,9 +30,9 @@
             </v-card>
           </v-col>
         </v-row>
-      </v-content>
+      </v-container>
+    </v-content>
 
-    </v-container>
   </dashboard>
 </template>
 
@@ -50,13 +49,13 @@ export default {
     items: [
       {
         color: '#1F7087',
-        src: 'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
+        src: require("../assets/foster.jpg"),
         title: 'Supermodel',
         artist: 'Foster the People',
       },
       {
         color: '#952175',
-        src: 'https://cdn.vuetifyjs.com/images/cards/halcyon.png',
+        src: require("../assets/halcyon.png"),
         title: 'Halcyon Days',
         artist: 'Ellie Goulding',
       },
